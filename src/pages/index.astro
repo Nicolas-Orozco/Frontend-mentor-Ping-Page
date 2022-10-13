@@ -2,15 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Form from '../components/Form.jsx';
+import Footer from "../components/Footer.astro"
 import DashboardImage from "../assets/illustration-dashboard.png"
 ---
 
 <Layout title="Frontend Mentor | Ping coming soon page">
-	<main class="font-franklin py-8 bg-slate-300 flex flex-col text-center max-w-2xl m-auto">
 		<h1 class="text-blue-dark text-base font-bold mb-6 [&+h2]:mb-4 ">PING<span class="text-blue">.</span></h1>
 		<h2 class="text-gray text-2xl font-thin [&+h3]:mb-7 px-8">We are launching <span class="text-blue-dark font-bold">soon!</span></h2>
 		<h3 class="text-sm font-md px-8">Subscribe and get notified</h3>
 		<Form client:load/>
 		<img width="500" height="500" class="px-3" src={DashboardImage} alt="Illustration of the Ping dashboard"/>
-	</main>
+		<Footer/>
 </Layout>
