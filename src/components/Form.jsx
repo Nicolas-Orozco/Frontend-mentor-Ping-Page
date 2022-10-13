@@ -8,7 +8,7 @@ function Email() {
   }, [email]);
   return (
     <form
-      className="flex flex-col justify-center flex-1 mb-16"
+      className="flex flex-col flex-1 mb-12 px-8"
       onSubmit={(e) => {
         emailValidation = useEmailValidation(email);
         e.preventDefault();
