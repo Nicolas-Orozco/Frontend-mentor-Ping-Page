@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 //import useEmailValidation from "../hooks/useEmailValidation";
 function Email() {
-  const [email, setEmail] = useState();
+  const [email, setEmail] = useState("");
   // const emailValidation = { isEmpty: false, isValid: true };
   useEffect(() => {
     console.log(email);
